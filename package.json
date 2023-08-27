@@ -1,0 +1,17 @@
+{
+  "name": "nd_helper",
+  "version": "1.0.0",
+  "description": "Newsdesk productivty tool",
+  "main": "nd_helper_client/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:server": "cd nd_helper_server && yarn start",
+    "start:client": "cd nd_helper_client && yarn start",
+    "start:both": "concurrently \"yarn start:server\" \"yarn start:client\""
+  },
+  "author": "Jeremy L. Shepherd",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
